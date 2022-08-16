@@ -10,7 +10,12 @@
   --blue: #807cc6;
   --gray-blue: #e1daeb;
   --off-white: #ebedf1;
+  --black: #141414;
+  --bright-blue: #00d1ff;
+  --gray: #222222;
+  --greenish-blue: #0c5b6c;
 }
+
 
 body {
   height: 100vh;

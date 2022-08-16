@@ -11,3 +11,18 @@
   --gray-blue: #e1daeb;
   --off-white: #ebedf1;
 }
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+
+body div {
+  width: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+}

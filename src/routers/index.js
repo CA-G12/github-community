@@ -8,7 +8,8 @@ const {
   serverErrorRoute,
 } = require('../controllers');
 
-router.get('/user', userRoute);
+router.get('/users', allUsersRoute);
+router.get('/users/:username', userRoute);
 router.use(notFoundRoute);
 router.use(serverErrorRoute);
 

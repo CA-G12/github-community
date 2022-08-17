@@ -1,8 +1,8 @@
-const userRoute = require('./user');
-const allUsersRoute = require('./allUsers');
-const notFoundRoute = require('./notFound');
-const serverErrorRoute = require('./serverError');
-const fetchRepos = require('./fetchRepos');
+const userRoute = require('./one-user/user');
+const allUsersRoute = require('./all-users/allUsers');
+const notFoundRoute = require('./errors/notFound');
+const serverErrorRoute = require('./errors/serverError');
+const fetchRepos = require('./one-user/fetchRepos');
 
 module.exports = {
   userRoute,

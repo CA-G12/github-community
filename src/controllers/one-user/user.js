@@ -1,5 +1,5 @@
 const path = require('path');
-const fetchData = require('./fetch');
+const fetchData = require('../fetch');
 
 // const userRoute = (req, res) => {
 //   res.sendFile(path.join(__dirname, '..', '..', 'public', 'html', 'user.html'));
@@ -11,7 +11,15 @@ const userRoute = (req, res) => {
     .then((data) => {
       if (data.message === 'Not Found') {
         res.sendFile(
-          path.join(__dirname, '..', '..', 'public', 'html', 'notFound.html')
+          path.join(
+            __dirname,
+            '..',
+            '..',
+            '..',
+            'public',
+            'html',
+            'notFound.html'
+          )
         );
       } else {
         res.send(data);

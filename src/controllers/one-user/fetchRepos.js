@@ -1,4 +1,4 @@
-const fetchData = require('./fetch.js');
+const fetchData = require('../fetch.js');
 
 const fetchRepos = (req, res) => {
   const userName = req.params.username;

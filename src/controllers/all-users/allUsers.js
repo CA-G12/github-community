@@ -1,5 +1,5 @@
 const path = require('path');
-const fetchData = require('./fetch');
+const fetchData = require('../fetch');
 
 const allUsersRoute = (req, res) => {
   fetchData('https://api.github.com/users')

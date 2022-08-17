@@ -55,9 +55,12 @@ header .links a:hover {
   padding: 1.5rem 0.5rem;
   width: 30%;
   margin-top: 7rem;
-  outline: none;
+  outline: 1px solid var(--bright-blue);
+  border: 0;
   border-radius: 0.5rem;
-  background-color: var(--baby-blue);
+  background-color: inherit;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 form button {

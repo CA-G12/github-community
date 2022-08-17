@@ -6,7 +6,6 @@ const followers = document.querySelectorAll('.user-about span')
 const repoContainer = document.querySelector('.repo-cards')
 
 const handleRepos = (repos) => {
-    console.log(repos);
     repoContainer.textContent = '';
     repos.forEach(e => {
         const card = document.createElement('div');
@@ -31,7 +30,6 @@ const handleRepos = (repos) => {
 }
 
 const handleUser = (user) => {
-    console.log(user);
     profileImage.src = user.avatar_url;
     profileName.textContent = user.name;
     loginName.textContent = user.login;
@@ -39,4 +37,3 @@ const handleUser = (user) => {
     followers[0].textContent = user.followers;
     followers[1].textContent = user.following;
 }
-

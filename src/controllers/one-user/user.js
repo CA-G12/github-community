@@ -1,10 +1,6 @@
 const path = require('path');
 const fetchData = require('../fetch');
 
-// const userRoute = (req, res) => {
-//   res.sendFile(path.join(__dirname, '..', '..', 'public', 'html', 'user.html'));
-// };
-
 const userRoute = (req, res) => {
   const url = `https://api.github.com/users/${req.params.username}`;
   fetchData(url)

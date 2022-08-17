@@ -15,3 +15,130 @@
   --gray: #222222;
   --greenish-blue: #0c5b6c;
 }
+
+body {
+  background-color: var(--black);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--off-white);
+  padding: 2rem 4rem;
+}
+header i {
+  margin-right: 1rem;
+}
+
+header .links a {
+  text-decoration: none;
+  color: var(--off-white);
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+header .links a:hover {
+  color: var(--bright-blue);
+}
+
+main {
+  display: flex;
+  color: var(--off-white);
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-items: center;
+}
+
+#user-info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+}
+
+#user-info .profile-pic {
+  width: 60%;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+#user-info .profile-pic img {
+  width: 100%;
+  height: 100%;
+}
+
+/* #user-info .user-about {
+  padding: 0 2rem;
+} */
+
+#user-info .user-about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#user-info .user-about h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #989898;
+}
+
+#user-info .user-about p {
+  font-size: 1.1rem;
+  margin-bottom: 1.6rem;
+}
+
+/*  start of repos section */
+
+#repos {
+  width: 60%;
+}
+
+#repos h2 {
+  font-size: 2rem;
+  border-bottom: solid #989898 1.5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#repos .repo-cards {
+  height: 450px;
+  overflow-y: scroll;
+  padding: 0 1rem;
+}
+
+#repos .repo-cards::-webkit-scrollbar {
+  width: 10px;
+}
+
+#repos .repo-cards::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#repos .repo-cards::-webkit-scrollbar-thumb {
+  background: var(--greenish-blue);
+}
+
+#repos .repo-cards::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#repos .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: var(--gray);
+  margin-bottom: 1rem;
+  border: solid var(--greenish-blue) 1.5px;
+}
+
+#repos .card a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--bright-blue);
+  font-size: 1.4rem;
+}

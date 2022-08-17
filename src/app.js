@@ -10,10 +10,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
+// /api/users/12/commwnts/
 
 app.use(router);
 
 module.exports = app;
-
-// require('dotenv').config();
-// const apiKey = process.env.API_KEY;

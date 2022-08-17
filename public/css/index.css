@@ -15,3 +15,110 @@
   --gray: #222222;
   --greenish-blue: #0c5b6c;
 }
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--black);
+  color: #fff;
+}
+
+header {
+  width: 100%;
+}
+
+.searchInput {
+  display: block;
+  margin: auto;
+  padding: 1.5rem 0.5rem;
+  width: 30%;
+  margin-top: 7rem;
+  outline: none;
+  border-radius: 0.5rem;
+  background-color: var(--baby-blue);
+}
+
+.cardsContainer {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.card {
+  padding: 4rem 0;
+  width: 30rem;
+  background-color: var(--gray);
+  border: 0.1rem solid var(--bright-blue);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.cardName {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.linkToUser {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.social {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  /* font-weight: 200; */
+  font-size: 1.2rem;
+}
+
+.folowers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--bright-blue);
+}
+
+.folowersNums {
+  color: white;
+}
+
+.folowerSquare {
+  background-color: var(--greenish-blue);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 10rem;
+}
+
+.seeMoreBTN {
+  margin-top: 1rem;
+  background-color: var(--gray);
+  border: 0.1rem solid var(--bright-blue);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  /* color: var(--bright-blue); */
+}
+
+.seeMoreBTN:hover {
+  color: var(--bright-blue);
+  /* border: 0.1rem solid white; */
+}

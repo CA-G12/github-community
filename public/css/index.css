@@ -95,14 +95,8 @@ form button {
 }
 
 .cardName {
-  margin-top: 1rem;
-  font-size: 2rem;
-}
-
-.linkToUser {
-  margin-top: 1rem;
-  font-size: 1.4rem;
-  font-weight: 100;
+  margin: 1rem 0;
+  font-size: 2.2rem;
 }
 
 .social {

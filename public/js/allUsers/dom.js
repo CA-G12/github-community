@@ -1,6 +1,6 @@
 const handleDom = (data) => {
     const container = document.querySelector('.cardsContainer');
-
+    container.textContent = '';
     data.forEach(e => {
         const card = document.createElement('div');
         card.classList.add('card');
@@ -72,5 +72,32 @@ const handleDom = (data) => {
     });
 }
 
+
+const submitBtn = document.querySelector('form button');
+const searchInput = document.querySelector('form input');
+
+const searchForUser = (username) => {
+
+    fetch(`/users/search/${username}`)
+        .then(data => data.json())
+        .then(data => {
+            if (data.message === 'Not Found') {
+                window.location.href = '../../html/notFound.html'
+            } else {
+                handleDom([data])
+            }
+        })
+        .catch((err) => console.log(err, 'failed to search'))
+}
+
+submitBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    const search = searchInput.value;
+    if (search) {
+        searchForUser(search)
+    } else {
+        alert('please fill in the field')
+    }
+})
 
 

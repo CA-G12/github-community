@@ -4,8 +4,4 @@ const getUsers = () => {
         .then(data => handleDom(data))
 }
 
-const searchForUser = (username) => {
-
-}
-
-getUsers()
+getUsers();

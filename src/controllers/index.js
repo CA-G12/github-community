@@ -3,6 +3,7 @@ const allUsersRoute = require('./all-users/allUsers');
 const notFoundRoute = require('./errors/notFound');
 const serverErrorRoute = require('./errors/serverError');
 const fetchRepos = require('./one-user/fetchRepos');
+const searchRoute = require('./all-users/searchRoute')
 
 module.exports = {
   userRoute,
@@ -10,4 +11,5 @@ module.exports = {
   notFoundRoute,
   serverErrorRoute,
   fetchRepos,
+  searchRoute,
 };

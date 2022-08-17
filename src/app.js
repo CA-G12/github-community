@@ -10,6 +10,16 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
+app.get('/user', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'html', 'user.html'));
+});
+
+app.use((err, req, res, next) => {
+  res.sendFile(
+    path.join(__dirname, '..', 'public', 'html', 'serverError.html')
+  );
+});
+
 module.exports = app;
 
 // require('dotenv').config();

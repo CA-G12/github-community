@@ -32,87 +32,39 @@
     </header>
 
     <main>
-      <section id="user-info">
-        <div class="profile-pic">
-          <img src="../assests/pro-img.png" alt="profile picture" />
-        </div>
-
-        <div class="user-about">
-          <h2>Sara Dahman</h2>
-          <h3>SaraDahman</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            eius molestias sequi quia ex facilis numquam.
-          </p>
-
-          <p><span>2</span> Followers <span>2</span> Following</p>
-        </div>
+      <section class="loading">
+        <img src="./assests/load-2.gif" alt="" />
       </section>
-
-      <section id="repos">
-        <h2>Repositories</h2>
-
-        <div class="repo-cards">
-          <div class="card">
-            <div>
-              <a href="#">Repo name</a>
-              <p>HTML, CSS</p>
-            </div>
-
-            <p>Created at: 2022-02-04</p>
+      <section class="user-data">
+        <section id="user-info">
+          <div class="profile-pic">
+            <img src="../assests/pro-img.png" alt="profile picture" />
           </div>
 
-          <div class="card">
-            <div>
-              <a href="#">Repo name</a>
-              <p>HTML, CSS</p>
-            </div>
-
-            <p>Created at: 2022-02-04</p>
+          <div class="user-about">
+            <h2>Sara Dahman</h2>
+            <h3>SaraDahman</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+              eius molestias sequi quia ex facilis numquam.
+            </p>
+            <p>
+              <i class="fa-solid fa-user-group"></i>
+              <span>2</span> <label class="followers">Followers</label> .
+              <span>2</span> <label class="following">Following</label>
+            </p>
           </div>
+        </section>
 
-          <div class="card">
-            <div>
-              <a href="#">Repo name</a>
-              <p>HTML, CSS</p>
-            </div>
+        <section id="repos">
+          <h2>Repositories</h2>
+          <div class="repo-cards"></div>
+        </section>
 
-            <p>Created at: 2022-02-04</p>
-          </div>
-
-          <div class="card">
-            <div>
-              <a href="#">Repo name</a>
-              <p>HTML, CSS</p>
-            </div>
-
-            <p>Created at: 2022-02-04</p>
-          </div>
-          <div class="card">
-            <div>
-              <a href="#">Repo name</a>
-              <p>HTML, CSS</p>
-            </div>
-
-            <p>Created at: 2022-02-04</p>
-          </div>
-          <div class="card">
-            <div>
-              <a href="#">Repo name</a>
-              <p>HTML, CSS</p>
-            </div>
-
-            <p>Created at: 2022-02-04</p>
-          </div>
-          <div class="card">
-            <div>
-              <a href="#">Repo name</a>
-              <p>HTML, CSS</p>
-            </div>
-
-            <p>Created at: 2022-02-04</p>
-          </div>
-        </div>
+        <section id="follow">
+          <h2>followers</h2>
+          <div class="list"></div>
+        </section>
       </section>
     </main>
     <script src="./js/user/dom.js"></script>

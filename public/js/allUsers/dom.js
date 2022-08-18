@@ -16,7 +16,7 @@ const handleDom = (data) => {
     card.appendChild(image);
 
     const userName = document.createElement('h1');
-    userName.textContent = e.name;
+    userName.textContent = e.login;
     userName.classList.add('cardName');
     card.appendChild(userName);
 
@@ -66,12 +66,12 @@ const handleDom = (data) => {
     followingNums.classList.add('folowersNums');
     following.appendChild(followingNums);
 
-    const seeMoreBtn = document.createElement('button');
-    seeMoreBtn.textContent = 'See More';
-    seeMoreBtn.classList.add('seeMoreBTN');
-    card.appendChild(seeMoreBtn);
+    // const seeMoreBtn = document.createElement('button');
+    // seeMoreBtn.textContent = 'See More';
+    // seeMoreBtn.classList.add('seeMoreBTN');
+    // card.appendChild(seeMoreBtn);
 
-    seeMoreBtn.addEventListener('click', (event) => {
+    card.addEventListener('click', (event) => {
       window.location.href = `../../user.html?username=${e.login}`;
     });
   });

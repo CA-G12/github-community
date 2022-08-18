@@ -213,6 +213,7 @@ header .links a:hover {
   font-size: 1.5rem;
   text-decoration: none;
   color: var(--bright-blue);
+  cursor: pointer;
 }
 
 /* ==== loading ==== */

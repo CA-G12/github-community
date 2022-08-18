@@ -18,7 +18,7 @@ const handleRepos = (repos) => {
 
     repoLink.href = e.html_url;
     repoLink.textContent = e.name;
-    repoLanguages.textContent = `🞄${e.language}` || '🞄HTML 🞄CSS 🞄JS';
+    repoLanguages.textContent = `🞄${e.language || 'HTML 🞄CSS 🞄JS'}`;
     repoDate.textContent = `created at: ${e.created_at.split('T')[0]}`;
 
     card.appendChild(repoDetails);
@@ -45,6 +45,7 @@ const itemList = document.querySelector('#follow .list');
 const heading = document.querySelector('#follow h2');
 
 const handleFollowers = (list) => {
+  console.log(list);
   followerSection.style.display = 'block';
   userReposSec.style.display = 'none';
 
@@ -61,8 +62,11 @@ const handleFollowers = (list) => {
     item.classList = 'item';
 
     img.src = e.avatar_url;
-    loginName.href = e.html_url;
+    // loginName.href = e.html_url;
     loginName.textContent = e.login;
+    loginName.addEventListener('click', () => {
+      window.location.href = `?username=${e.login}`;
+    });
     date.textContent = `Joined on: ${e.created_at.split('T')[0]}`;
 
     imgDiv.appendChild(img);
